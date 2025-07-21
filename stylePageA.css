@@ -1,0 +1,290 @@
+@keyframes toSkys {
+    0%{
+        background: linear-gradient(to bottom,#c4e9fc, #fcf4f1, #dbaf8c,#ecc8a6 );
+    }
+    20%{
+        background: linear-gradient(to bottom, #8cc6e3, #c4e9fc, #fcf4f1, #dbaf8c );
+    }
+    40%{
+        background: linear-gradient(to bottom, #81d5ff, #8cc6e3, #c4e9fc, #fcf4f1);
+    }
+    60%{
+        background: linear-gradient(to bottom, #56c5fd , #81d5ff, #8cc6e3, #c4e9fc);
+    }
+    80%{
+        background: linear-gradient(to bottom, #a1ebfd , #56c5fd , #81d5ff, #8cc6e3);
+    }
+    100%{
+        background: linear-gradient(to bottom, #a1ebfd , #acf1ff, #a1ebfb,  #81d5ff);
+    }
+}
+
+@keyframes fromSkys {
+    0%{
+        background: linear-gradient(to bottom, #a1ebfd , #acf1ff, #a1ebfb,  #81d5ff);
+    }
+    20%{
+        background: linear-gradient(to bottom, #a1ebfd , #56c5fd , #81d5ff, #8cc6e3);
+    }
+    40%{
+        background: linear-gradient(to bottom, #56c5fd , #81d5ff, #8cc6e3, #c4e9fc);
+    }
+    60%{
+        background: linear-gradient(to bottom, #81d5ff, #8cc6e3, #c4e9fc, #fcf4f1);
+    }
+    80%{
+        background: linear-gradient(to bottom, #8cc6e3, #c4e9fc, #fcf4f1, #dbaf8c );
+    }
+    100%{
+        background: linear-gradient(to bottom,#c4e9fc, #fcf4f1, #dbaf8c,#ecc8a6 );
+    }
+}
+
+
+h1{
+    padding: 20px;
+    text-shadow: 
+        2px 2px 0px darkblue, 
+        2px -2px 0px darkblue , 
+        -2px -2px 0px darkblue, 
+        -2px 2px 0px darkblue,
+        -2px 0px 0px darkblue, 
+        2px 0px 0px darkblue, 
+        0px -2px 0px darkblue, 
+        0px 2px 0px darkblue;
+}
+
+header{
+    background-image: url('photos/header1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    font-size: calc(2vw + 2vh);
+    color: aliceblue;
+    font-weight: 900;
+    
+}
+
+nav{
+    border: solid black 2px;
+    display: flex;
+    gap: 2vw;
+    font-size: calc(1.5vw + 1.5vh);
+    justify-content: space-evenly;
+    padding: 2vh 0px;
+}
+
+.blankSpace{
+    padding: 15vh;
+}
+
+.homeIntro {
+    padding: 10vh 15vw;
+    margin: 10px;
+    border: solid 10px rgb(83, 185, 228);  
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(rgba(246, 236, 236, 0.5), rgba(253, 244, 244, 0.5)), url('photos/thc0014229-2196756.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.introP{
+    font-weight: 700;
+}
+
+
+
+h2{
+    font-size: calc(3.9vw + 3.9vh)
+}
+
+p{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: calc(2.8vh + 2.8vh)
+}
+
+button{
+    font-size: 26px;
+    background: linear-gradient(to bottom, #fcf4f1, #dbaf8c,#ecc8a6 , #ffe1bf);
+    animation: fromSkys 0.5s ease;
+}
+
+button:hover{
+    font-size: 32px;
+    animation: toSkys 0.5s ease 1;
+    background: linear-gradient(to bottom, #a1ebfd , #acf1ff, #a1ebfb,  #81d5ff);
+} 
+
+
+.contentH3{
+    grid-area: ch3;
+}
+
+.contentImg{
+    grid-area: cimg;
+    width: 35vw;
+}
+
+.contentP{
+    grid-area: cp;
+}
+
+.contentButton{
+    grid-area: cb;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contentImga{
+    grid-area: cimga;
+    width: 20vw;
+}
+
+.content1{
+    display: grid;
+    grid-template-areas: 'ch3 .' 'cp cimg' 'cp cimg' 'cb cb';
+}
+
+.content2{
+    display: grid;
+    grid-template-areas: 'ch3 .' 'cp cimga' 'cb cimga';
+}
+
+h4{
+    font-size: calc(2.4vw + 2.4vh)    
+}
+
+.creditList{
+    font-size: calc(1.2vw + 1.2vh)
+}
+
+li{margin: 5px;}
+
+.footerTitle{
+    grid-area: fTitle;
+    font-size: 26px;
+}
+
+.footerLinks{
+    border: solid rgb(107, 83, 56) 2px;
+    background-color: rgba( 251, 172, 71, 0.4);
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-area: fLinks;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+footer{
+    background: linear-gradient(to bottom, #a1ebfd , #acf1ff , #a1ebfd, #81d5ff , #8cc6e3 , #c4e9fc , #fcf4f1 , #dbaf8c , #ffe1bf , #fadebe 65%);
+    background-position: center;
+    background-size: cover;
+    padding: 10vw 20px;
+    display: grid;
+    grid-template-areas: 'fTitle fLinks .' '. fLinks .';
+    grid-gap: 10px;
+
+}
+
+
+
+
+@media (max-width: 700px) {
+    .blankSpace{
+        padding: 9vh;
+    }
+
+    .homeIntro {
+        padding: 9vh 9vw;
+        margin: 5px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+    .contentImg{
+    width: 70vw;
+    }
+
+    button{
+        font-size: 24px;
+        animation: fromSkys 0.5s ease;
+    }
+
+    button:hover{
+        font-size: 30px;
+        animation: toSkys 0.5s ease 1;
+        background: linear-gradient(to bottom, #a1ebfd , #acf1ff, #a1ebfb,  #81d5ff);
+    } 
+
+    .content1{
+    grid-template-areas: 'ch3 .' 'cimg cimg' 'cp cp' 'cb cb';
+    }
+    
+    footer{
+    grid-template-areas: 'fTitle' 'fLinks';
+    grid-gap: 10px;
+    }
+
+    .footerTitle{
+        font-size: 24px;
+    }
+
+    .footerLinks{
+        row-gap: 30px;
+        font-size: larger;
+    }
+
+}
+
+
+
+@media (min-width: 900px) {
+    .blankSpace{
+        padding: 25vh;
+    }
+
+    .homeIntro {
+        padding: 15vh 15vw;
+        margin: 10px;
+         
+    }
+
+    p{
+        font-size: 36px;
+    }
+
+    button{
+        font-size: 28px;
+        animation: fromSkys 0.5s ease;
+    }
+
+    button:hover{
+        font-size: 34px;
+        animation: toSkys 0.5s ease 1;
+        background: linear-gradient(to bottom, #a1ebfd , #acf1ff, #a1ebfb,  #81d5ff);
+    } 
+
+    .contentImga{
+    margin-left: 20px;
+    }
+
+    .footerTitle{
+        font-size: 34px;
+    }
+
+    .footerLinks{
+        font-size: calc( 1.8vw + 1.8vh);
+        gap: 25px;
+    }
+
+
+}

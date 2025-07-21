@@ -1,0 +1,320 @@
+
+h1{
+    padding: 20px;
+    text-shadow: 
+        2px 2px 0px darkblue, 
+        2px -2px 0px darkblue , 
+        -2px -2px 0px darkblue, 
+        -2px 2px 0px darkblue,
+        -2px 0px 0px darkblue, 
+        2px 0px 0px darkblue, 
+        0px -2px 0px darkblue, 
+        0px 2px 0px darkblue;
+}
+
+header{
+    background-image: url('photos/header1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    font-size: calc(2vw + 2vh);
+    color: aliceblue;
+    font-weight: 900;
+}
+
+nav{
+    border: solid black 2px;
+    display: flex;
+    gap: 3.5vw;
+    font-size: calc(1.5vw + 1.5vh);
+    justify-content: space-evenly;
+    padding: 2vh 0px;
+}
+
+
+.loc{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.currentBreadcrumb{
+    font-size: 24px;
+}
+
+.blankSpace2{
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    padding-bottom: 2.5vh;
+    /*text-align: center;
+    align-content: center;
+    align-items: center;*/
+
+}
+
+.headlineTitle{
+    text-align: center;
+    margin: 8vh 4vw;
+}
+
+.goToButton2{
+    font-size: calc(2.9vh + 2.9vh)
+}
+
+.centerText{
+    text-align: center;
+}
+
+
+h2{
+    font-size: calc(3.9vw + 3.9vh)
+}
+
+p{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: calc(2.8vh + 2.8vh)
+}
+
+.backButton{
+    font-size: calc(2vw + 2vh);
+    background-color: white;
+    border: solid 4px skyblue;
+    border-radius: 10px;
+}
+
+.backButton:hover{
+    background-color: rgb(18, 111, 22);
+    color: white;
+    border-color: rgb(53, 80, 56);
+}
+
+
+.faqButton{
+    font-size: calc(2.5vw + 2.5vh);
+    border: solid 2px silver;
+    background: radial-gradient(circle, skyblue, rgb(169, 224, 236), rgb(111, 223, 223));
+}
+
+.faqButton:hover{
+    font-size: calc(3vw + 3vh);
+    background: linear-gradient(to right, aliceblue, rgb(193, 230, 229), aqua);
+    border-radius: 5px;
+    border-color: dimgrey;
+}
+
+
+
+.contentH3{
+    grid-area: ch3;
+}
+
+.contentImg{
+    grid-area: cimg;
+    width: 35vw;
+}
+
+.contentP{
+    grid-area: cp;
+}
+
+.contentButton{
+    grid-area: cb;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contentImga{
+    grid-area: cimga;
+    width: 20vw;
+}
+
+.content1{
+    display: grid;
+    grid-template-areas: 'ch3 .' 'cp cimg' 'cp cimg' 'cb cb';
+}
+
+
+.contentH3a{
+    grid-area: ch3a;
+}
+
+.contentImgb{
+    grid-area: cimgb;
+    width: 30vw;
+}
+
+.contentPa{
+    grid-area: cpa;
+}
+
+.contentButton1{
+    grid-area: cb1;
+    text-align: center;
+}
+
+.content3{
+    border: dashed black 2px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 'ch3a ch3a' 'cpa cimgb' 'cb1 cimgb';
+}
+
+.content4aH{
+    grid-area: c4ah;
+}
+
+.content4aImg{
+    grid-area: c4ai;
+    width: 35vw;
+}
+
+.content4aP{
+    grid-area: c4ap;
+}
+
+.content4a{
+    display: grid;
+    grid-template-areas: 'c4ah c4ah' 'c4ap c4ai';
+}
+
+.c4bi{
+    width: 35vw;
+    grid-area: c4bi;
+    float: right;
+}
+
+.c4bp{
+    grid-area: c4bp;
+}
+
+.c4b{
+    display: grid;
+    grid-template-areas: 'c4bp c4bi';
+}
+
+.blankLine{
+    border: solid white 2px;
+}
+
+h4{
+    font-size: calc(2.4vw + 2.4vh)    
+}
+
+.creditList{
+    font-size: calc(1.2vw + 1.2vh)
+}
+
+li{margin: 5px;}
+
+.footerTitle{
+    grid-area: fTitle;
+    font-size: 26px;
+}
+
+.footerLinks{
+    border: solid rgb(107, 83, 56) 2px;
+    background-color: rgba( 251, 172, 71, 0.4);
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-area: fLinks;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+footer{
+    background: linear-gradient(to bottom, #a1ebfd , #acf1ff , #a1ebfd, #81d5ff , #8cc6e3 , #c4e9fc , #fcf4f1 , #dbaf8c , #ffe1bf , #fadebe 65%);
+    background-position: center;
+    background-size: cover;
+    padding: 10vw 20px;
+    display: grid;
+    grid-template-areas: 'fTitle fLinks .' '. fLinks .';
+    grid-gap: 10px;
+
+}
+
+@media (max-width: 700px) {
+
+    p{
+        font-size: 24px;
+    }
+    
+    .currentBreadcrumb{
+    font-size: 18px;
+    }
+
+    .contentImg{
+    width: 70vw;
+    }
+
+    .content1{
+    grid-template-areas: 'ch3 .' 'cimg cimg' 'cp cp' 'cb cb';
+    }
+
+    .content3{
+    border: dashed black 2px;
+    display: grid;
+    grid-template-areas: 'ch3a ch3' 'cpa cimgb' 'cpa cimgb' 'cb1 cb1';
+    }
+
+    .content4aImg{
+    width: 75vw;
+    }
+
+    .content4a{
+    display: grid;
+    grid-template-areas: 'c4ah' 'c4ai' 'c4ap';
+    }
+
+    .c4bi{
+    width: 75vw;
+    }
+
+    .c4b{
+    grid-template-areas: 'c4bi' 'c4bp';
+    }
+
+    footer{
+    grid-template-areas: 'fTitle' 'fLinks';
+    grid-gap: 10px;
+    }
+
+    .footerTitle{
+        font-size: 24px;
+    }
+
+    .footerLinks{
+        row-gap: 30px;
+        font-size: larger;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    p{
+        font-size: 32px;
+    }
+
+    .backButton{
+    font-size: calc(1.5vw + 1.5vh);
+    }
+    
+    .content4bImg{
+    width: 30vw;
+    }
+
+    .footerTitle{
+        font-size: 34px;
+    }
+
+    .footerLinks{
+        font-size: calc( 1.8vw + 1.8vh);
+        gap: 25px;
+    }
+} 
