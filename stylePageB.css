@@ -328,6 +328,10 @@ footer{
     p{
         font-size: 24px;
     }
+
+    nav{
+        flex-wrap: wrap;
+    }
     
     .currentBreadcrumb{
     font-size: 18px;

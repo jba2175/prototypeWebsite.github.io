@@ -218,6 +218,10 @@ footer{
         font-size: 24px;
     }
 
+    nav{
+        flex-wrap: wrap;
+    }
+
     .contentImg{
     width: 70vw;
     }
