@@ -165,6 +165,14 @@ h4{
 
 li{margin: 5px;}
 
+.contactUsSending{
+    margin-top: 2vh;
+    border: #acf1ff solid 2px;
+    border-radius: 20px;
+    padding: 2vh 2vw;
+    background: #c1ecf59d;
+}
+
 .footerTitle{
     grid-area: fTitle;
     font-size: 26px;

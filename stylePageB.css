@@ -1,3 +1,29 @@
+@keyframes glowing {
+    0%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 49%);
+    }
+    20%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 50%);
+    }
+    40%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 80%);
+    }
+    50%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 99%);
+    }
+    60%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 80%);
+    }
+    80%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 50%);
+    }
+    100%{
+        background: radial-gradient(circle, #acf1ff , #ffffff 49%);
+    }
+}
+
+
+
 
 h1{
     padding: 20px;
@@ -58,8 +84,16 @@ nav{
 }
 
 .goToButton2{
-    font-size: calc(2.9vh + 2.9vh)
+    font-size: calc(2.9vh + 2.9vh);
+    background-color: white;
+    border: black solid 2px;
 }
+
+.goToButton2:hover{
+    animation: glowing 5s ease-in-out infinite;
+    transform: scale(1.10);
+}
+
 
 .centerText{
     text-align: center;
@@ -210,6 +244,57 @@ h4{
 
 li{margin: 5px;}
 
+input{
+    font-size: calc(1.6vw + 1.6vh);
+    grid-area: i1;
+}
+
+label{
+    font-size: calc(1.6vw + 1.6vh);
+    grid-area: l1;
+}
+
+textarea{
+    font-size: calc(1.6vw + 1.6vh);
+}
+
+.forms1{
+    margin:2vh 2vw;
+}
+
+input[type='submit']{
+    background-color: white;
+    border-color: green;
+}
+
+input[type='submit']:hover{
+    background-color: green;
+    border-color: lightgreen;
+    color: white;
+}
+
+input[type='submit']:active{
+    background-color: turquoise;
+    border-color: turquoise;
+    color: turquoise;
+}
+
+.contactForm{
+    text-align: center;
+    border: #8cc6e3 4px solid;
+    border-radius: 8px;
+    padding: 4vh 4vw;
+}
+
+.contactUsSending{
+    margin-top: 2vh;
+    border: #acf1ff solid 2px;
+    border-radius: 20px;
+    padding: 2vh 2vw;
+    background: #c1ecf59d;
+}
+
+
 .footerTitle{
     grid-area: fTitle;
     font-size: 26px;
@@ -307,6 +392,11 @@ footer{
     
     .content4bImg{
     width: 30vw;
+    }
+
+    .mainForm{
+    margin:4vh 4vw;
+    padding-top: 20px;
     }
 
     .footerTitle{
